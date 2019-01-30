@@ -1,0 +1,27 @@
+adb shell
+run-as com.your.packagename` 
+cp /data/data/com.app.packagename/
+adb backup -noapk com.app.packagename
+
+adb -d shell 'run-as com.mypackage cat /data/data/com.mypackage/databases/mydb.db > /sdcard/mydb.db'
+
+adb -d shell pm grant com.wanam   android.permission.CHANGE_CONFIGURATION
+
+Voice file found, but MD5 sum incorrect. Foundbe9e760e3bb917699fa2f40b75cbf178. Expected: af7393cab410ff3d61f1314bd11f3034
+
+
+adb shell am start -n com.mindtree.dignifi/.view.HelpList --es extraKey extraValue
+ಕನ್ನಡ ದ್ರಾವಿಡ ಭಾಷೆಗಳಲ್ಲಿ ಪ್ರಾಮುಖ್ಯವುಳ್ಳ ಭಾಷೆ. ಕನ್ನಡ ಭಾಷೆಯನ್ನು ಅದರ ವಿವಿಧ ರೂಪಗಳಲ್ಲಿ ಸುಮಾರು ೪೫ ದಶಲಕ್ಷ ಜನರು ಆಡು ನುಡಿಯಾಗಿ ಬಳಸುತ್ತಲಿದ್ದಾರೆ. ಕನ್ನಡ ಕರ್ನಾಟಕ ರಾಜ್ಯದ ಆಡಳಿತ ಭಾಷೆ. ಜಗತ್ತಿನಲ್ಲಿ ಅತ್ಯಂತ ಹೆಚ್ಚು ಮಂದಿ ಮಾತನಾಡುವ ಭಾಷೆಯೆಂಬ ನೆಲೆಯಲ್ಲಿ ಇಪ್ಪತ್ತೊಂಬತ್ತನೆಯ ಸ್ಥಾನ ಕನ್ನಡಕ್ಕಿದೆ. ವಿನೋಬಾ ಭಾವೆ ಕನ್ನಡ ಲಿಪಿಯನ್ನು ಲಿಪಿಗಳ ರಾಣಿಯೆಂದು ಹೊಗಳಿದ್ದಾರೆ.
+
+adb shell am start -a "android.intent.action.VIEW" -c "android.intent.category.DEFAULT"
+adb shell am start -n "packageNameAsperManifist/packagenameAndActivityName -a "android.intent.action.VIEW"  
+
+adb -d logcat <your package name>:<log level> *:S
+adb -d logcat com.mindtree.dignifi:* *:S
+
+$ adb shell cat /data/local/tmp/lldb-server | run-as com.mindtree.dignifi sh -c 'cat > /data/data/com.mindtree.dignifi/lldb/bin/lldb-server && chmod 700 /data/data/com.mindtree.dignifi/lldb/bin/lldb-server'
+$ adb shell cat /data/local/tmp/start_lldb_server.sh | run-as com.mindtree.dignifi sh -c 'cat > /data/data/com.mindtree.dignifi/lldb/bin/start_lldb_server.sh && chmod 700 /data/data/com.mindtree.dignifi/lldb/bin/start_lldb_server.sh'
+Starting LLDB server: /data/data/com.mindtree.dignifi/lldb/bin/start_lldb_server.sh /data/data/com.mindtree.dignifi/lldb unix-abstract /com.mindtree.dignifi-0 platform-1545992622537.sock "lldb process:gdb-remote packets"
+Debugger attached to process 2426
+
+
