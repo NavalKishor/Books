@@ -1,0 +1,27 @@
+Starting with NDK r4, you can simply place the file under $PROJECT/jni/ and launch the 'ndk-build' script from your project tree.
+
+If you want to use 'ndk-build' but place the file to a different location, use a GNU Make variable override as:
+
+ndk-build NDK_APPLICATION_MK=/path/to/your/Application.mk
+
+ndk-build -C your_project_path_till_your_mkfile_folder
+
+./gradlew cleanNative --debug
+./gradlew clean
+./gradlew build
+
+find $ANDROID_NDK -name 'stdlib.h'
+adb shell ifconfig | grep -i inet | cut -d" " -f12
+
+
+
+tar xvjf filename.tar.bz2 
+
+https://github.com/JIghtuse/stl-examples/blob/master/CMakeLists.txt
+https://github.com/NavalKishor/FliteTTSEngine
+https://expertise.jetruby.com/android-ndk-using-c-c-native-libraries-to-write-android-apps-21550cdd86a
+https://github.com/JIghtuse/stl-examples/blob/master/CMakeLists.txt
+https://android.googlesource.com/platform/external/parameter-framework/+/marshmallow-dr1.5-release%5E2..marshmallow-dr1.5-release/
+https://stackoverflow.com/questions/20835976/fatal-error-iostream-no-such-file-or-directory
+https://www.hiroom2.com/2016/09/07/convert-makefile-to-cmakelists-txt-manually/
+https://github.com/superpoweredSDK/Low-Latency-Android-iOS-Linux-Windows-tvOS-macOS-Interactive-Audio-Platform/blob/master/Examples_Android/SuperpoweredCrossExample/app/CMakeLists.txt
